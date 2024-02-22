@@ -14,7 +14,9 @@
     "next-themes": "^0.2.1",
     "nextjs-simple-typewriter": "^5.2.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",

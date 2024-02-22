@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import ThemeSwitch from "@/components/ThemeSwitch";
+import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,8 @@ export default function RootLayout({
                 <Providers>
                     {children}
                     <ThemeSwitch />
+                    <Footer />
+                    <Toaster />
                 </Providers>
             </body>
         </html>

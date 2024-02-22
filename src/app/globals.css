@@ -16,6 +16,14 @@
     }
 }
 
+::-webkit-file-upload-button {
+    display: none;
+}
+
+::file-selector-button {
+    display: none;
+}
+
 /* body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(
