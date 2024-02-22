@@ -1,6 +1,6 @@
 # Dockerfile.prod
 
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 FROM base AS deps
 RUN apk add --no-cache libc6-compat
@@ -58,5 +58,5 @@ EXPOSE 3000
 ENV PORT 3000
 # set hostname to localhost
 ENV HOSTNAME "0.0.0.0"
-
+RUN ls
 CMD ["node", "server.js"]
