@@ -40,6 +40,9 @@ const FormInput = () => {
             const statusFile = checkFileValid(formData.get("files"))
             if (statusFile.status === 500){
                 setFileErr(statusFile.msg)
+                toast.error("Error Uploaded", {
+                    id: loading
+                })
                 return
             }else{
                 setFileErr("")
