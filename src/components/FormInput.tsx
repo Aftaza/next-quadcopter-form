@@ -1,6 +1,5 @@
 "use client"
 import { checkFileValid, formSchema } from '@/utils/formSchema'
-import { saveFile } from '@/utils/saveFile'
 import React, { FormEvent, useState } from 'react'
 import toast from 'react-hot-toast'
 import { z } from 'zod'
@@ -63,6 +62,7 @@ const FormInput = () => {
                 toast.success("Successfully Uploaded", {
                     id: loading
                 })
+                window.location.reload()
             }else{
                 toast.error("Error Uploaded", {
                     id: loading
@@ -74,6 +74,7 @@ const FormInput = () => {
             })
             console.log(error)
         }
+        
     }
     
     return (
