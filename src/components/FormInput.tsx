@@ -66,6 +66,9 @@ const FormInput = () => {
                 })
             }
         }catch (error){
+            toast.error("Error Uploaded", {
+                id: loading
+            })
             console.log(error)
         }
     }
